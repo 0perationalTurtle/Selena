@@ -1,0 +1,35 @@
+{
+  "name": "selena",
+  "version": "1.0.0",
+  "description": "E-commerce app running on an express server and rendering with ejs",
+  "keywords": [
+    "ejs",
+    "node",
+    "scss",
+    "tailwindcss",
+    "daisyUI"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "0perationalTurtle"
+  },
+  "license": "ISC",
+  "author": "Anselm Ojimadu, Zainaob Alese, Edom Bright",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "build-css": "sass --no-source-map --watch scss:public/css",
+    "tw:build": "tailwindcss build -i ./public/css/tailwind.css -o ./public/css/main.css"
+  },
+  "dependencies": {
+    "daisyui": "^5.0.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "sass": "^1.85.1",
+    "tailwindcss": "^3.4.17"
+  }
+}

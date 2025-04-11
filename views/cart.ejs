@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+<main class="p-8">
+  <h1 class="text-3xl font-bold text-center mb-8">Your Cart</h1>
+  <div class="max-w-2xl mx-auto">
+    <div class="space-y-4">
+      <!-- Cart Items -->
+      <div class="flex items-center justify-between p-4 border rounded">
+        <div class="flex items-center">
+          <img src="/images/men1.avif" alt="Product" class="w-16 h-16 object-cover rounded">
+          <div class="ml-4">
+            <h2 class="text-lg font-medium">Men's Regular Fit Coated Jacket</h2>
+            <p class="text-sm text-gray-600">$295.99</p>
+          </div>
+        </div>
+        <button class="btn btn-error btn-sm">Remove</button>
+      </div>
+      <!-- Repeat for other items -->
+    </div>
+    <div class="mt-8">
+      <!-- <h2 class="text-xl font-bold">Total: $259.98</h2> -->
+      <button class="btn btn-primary w-full mt-4">Checkout</button>
+    </div>
+  </div>
+</main>
+<%- include('partials/footer') %>

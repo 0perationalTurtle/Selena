@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+<main class="p-8">
+  <div class="max-w-4xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Product Image -->
+      <div>
+        <img src="<%= product.image %>" alt="<%= product.name %>" class="w-full rounded-lg">
+      </div>
+
+      <!-- Product Details -->
+      <div>
+        <h1 class="text-3xl font-bold"><%= product.name %></h1>
+        <p class="text-2xl text-gray-600 mt-2">$<%= product.price.toFixed(2) %></p>
+        <p class="mt-4"><%= product.description %></p>
+        <div class="mt-6">
+          <h2 class="text-xl font-bold">Sizes</h2>
+          <p><%= product.sizes.join(", ") %></p>
+        </div>
+        <div class="mt-6">
+          <h2 class="text-xl font-bold">Material & Care</h2>
+          <p><strong>Material:</strong> <%= product.material %></p>
+          <p><strong>Care:</strong> <%= product.care %></p>
+        </div>
+        <button class="btn btn-primary mt-6">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</main>
+<%- include('partials/footer') %>

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+ /*Now, you can run the following command to compile the CSS file: 
+ npx tailwindcss-cli@latest build public/css/tailwind.css -o public/css/styles.css 
+ This command will compile the CSS file and save it in the  public/css/styles.css  file. 
+ Now, you can include the compiled CSS file in your HTML file: 
+ <!DOCTYPE html>*/

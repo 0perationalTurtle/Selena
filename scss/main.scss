@@ -1,0 +1,333 @@
+$primary-color: #3b82f6;
+$secondary-color: #1e40af;
+$text-color: #374151;
+$background-color: #fff;
+$hover-color: #2563eb;
+$font-family: 'Arial', sans-serif;
+
+body {
+    font-family: $font-family;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+nav {
+    display: flex;
+    justify-items: center;
+    
+    background-color: $primary-color;
+    color: $background-color;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /*================================================*/
+  // Colors
+$primary-color: #3b82f6;
+$secondary-color: #1e40af;
+$text-color: #374151;
+$background-color: #f9fafb;
+$hover-color: #2563eb;
+$error-color: #dc2626;
+
+// Typography
+$font-family: 'Arial', sans-serif;
+$font-size-base: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+$font-size-2xl: 32px;
+$font-size-3xl: 48px;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+
+// Borders
+$border-radius: 8px;
+$border-color: #e5e7eb;
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  color: $text-color;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: $hover-color;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+// Buttons
+%btn-base {
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+  @extend %btn-base;
+  background-color: $primary-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.btn-error {
+  @extend %btn-base;
+  background-color: $error-color;
+  color: white;
+
+  &:hover {
+    background-color: darken($error-color, 10%);
+  }
+}
+
+// Cards
+.card {
+  background-color: white;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// Home Page
+#home {
+  #hero {
+    background-size: cover;
+    background-position: center;
+
+    #hero-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    #hero-content {
+      #hero-title {
+        font-size: $font-size-3xl;
+      }
+
+      #hero-subtitle {
+        font-size: $font-size-lg;
+      }
+
+      #shop-now-btn {
+        margin-top: $spacing-md;
+      }
+    }
+  }
+}
+
+// About Page
+#about {
+  #about-title {
+    font-size: $font-size-2xl;
+  }
+
+  #about-content {
+    #about-text-1,
+    #about-text-2 {
+      font-size: $font-size-lg;
+    }
+  }
+}
+
+// Cart Page
+#cart {
+  #cart-title {
+    font-size: $font-size-2xl;
+  }
+
+  #cart-content {
+    #cart-items {
+      #cart-item-1 {
+        border: 1px solid $border-color;
+      }
+    }
+
+    #cart-total {
+      #total-text {
+        font-size: $font-size-xl;
+      }
+
+      #checkout-btn {
+        margin-top: $spacing-md;
+      }
+    }
+  }
+}
+
+// Contact Page
+#contact {
+  #contact-title {
+    font-size: $font-size-2xl;
+  }
+
+  #contact-form {
+    #contact-form-content {
+      #name-field,
+      #email-field,
+      #message-field {
+        margin-bottom: $spacing-md;
+      }
+
+      #submit-btn {
+        margin-top: $spacing-md;
+      }
+    }
+  }
+}
+
+// Login Page
+#login {
+  #login-title {
+    font-size: $font-size-2xl;
+  }
+
+  #login-form {
+    #login-form-content {
+      #email-field,
+      #password-field {
+        margin-bottom: $spacing-md;
+      }
+
+      #login-btn {
+        margin-top: $spacing-md;
+      }
+    }
+  }
+}
+
+// Signup Page
+#signup {
+  #signup-title {
+    font-size: $font-size-2xl;
+  }
+
+  #signup-form {
+    #signup-form-content {
+      #name-field,
+      #email-field,
+      #password-field {
+        margin-bottom: $spacing-md;
+      }
+
+      #signup-btn {
+        margin-top: $spacing-md;
+      }
+    }
+  }
+}
+
+// Shop Page
+#shop {
+  #shop-title {
+    font-size: $font-size-2xl;
+  }
+
+  #shop-content {
+    #shop-men-card,
+    #shop-women-card,
+    #shop-kids-card {
+      margin-bottom: $spacing-md;
+    }
+  }
+}
+
+// Product Page
+#product {
+  #product-title {
+    font-size: $font-size-2xl;
+  }
+
+  #product-content {
+    #product-image {
+      width: 100%;
+      height: auto;
+    }
+
+    #product-details {
+      #product-price {
+        font-size: $font-size-xl;
+      }
+
+      #add-to-cart-btn {
+        margin-top: $spacing-md;
+      }
+    }
+  }
+}
+
+// Shop Men Page
+#shop-men {
+  #shop-men-title {
+    font-size: $font-size-2xl;
+  }
+
+  #shop-men-content {
+    #shop-men-card {
+      margin-bottom: $spacing-md;
+    }
+  }
+}
+
+// Shop Women Page
+#shop-women {
+  #shop-women-title {
+    font-size: $font-size-2xl;
+  }
+
+  #shop-women-content {
+    #shop-women-card {
+      margin-bottom: $spacing-md;
+    }
+  }
+}
+
+// Shop Kids Page
+#shop-kids {
+  #shop-kids-title {
+    font-size: $font-size-2xl;
+  }
+
+  #shop-kids-content {
+    #shop-kids-card {
+      margin-bottom: $spacing-md;
+    }
+  }
+}
